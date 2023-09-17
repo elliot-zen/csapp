@@ -4,7 +4,9 @@
 #include <stdio.h>
 
 int main() {
-  printf("uint_max + uintmax Result : %d\n", uadd_ok(UINT_MAX, UINT_MAX));
-  printf("1 + 1 Result : %d\n", uadd_ok(1, 1));
+  printf("%d \n", INT_MIN);
+  printf("%d \n", tsub_ok(-1, INT_MIN));
+  printf("%d \n", tadd_ok(-1, INT_MIN));
+  printf("%d \n", (-1 - INT_MIN) == INT_MAX);
   return 0;
 }
